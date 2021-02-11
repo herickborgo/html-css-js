@@ -1,0 +1,55 @@
+:root {
+  --primary-color: gainsboro;
+  --secondary-color: #6747c7;
+  --accent: rgba(0, 0, 0, 0.5);
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: gainsboro;
+}
+
+#app {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#app #toolbar {
+  padding: 0;
+  margin: 0;
+  height: 5em;
+  width: 100%;
+  background: linear-gradient(360deg, gray 0%, var(--secondary-color) 5%, var(--secondary-color) 100%);
+  top: 0;
+  position: fixed;
+  z-index: 10
+}
+
+#app #content {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 6em;
+  left: .9em;
+  z-index: 0;
+}
+
+#app #footer {
+  margin: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, grey 0%, var(--secondary-color) 5%, var(--secondary-color) 100%);
+  height: 3em;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  text-align: center;
+  text-justify: center;
+  line-height: 3em;
+  pointer-events: none;
+}
